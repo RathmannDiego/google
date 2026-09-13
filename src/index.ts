@@ -14,7 +14,7 @@ export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
     let nombreAmbienteResultado = "";
-
+ 
     // Si el usuario hace clic en el botón (envío del formulario o acción POST)
     if (request.method === "POST" || url.searchParams.get("consultar") === "true") {
       const ambienteBD = await obtenerNombreAmbiente(env.DB);
