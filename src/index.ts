@@ -1,7 +1,7 @@
 export interface Env {
   DB: D1Database;
   ENVIRONMENT: string;
-  DB_NAME: string;
+  DB_NAME: string; 
 }
 
 export default {
