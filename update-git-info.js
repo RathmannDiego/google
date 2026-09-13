@@ -16,7 +16,7 @@ const filePath = './src/index.ts';
 let content = fs.readFileSync(filePath, 'utf8');
 
 const updatedContent = content
-  .replace(/const branch = ".*";/, `const branch = "${branch}";`)
+  .replace(/let branch = (['"]).*?\1;/, `let branch = "${branch}";`)
   .replace(/const repo = ".*";/, `const repo = "${repo}";`);
 
 fs.writeFileSync(filePath, updatedContent, 'utf8');
