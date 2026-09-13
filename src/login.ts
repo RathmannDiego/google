@@ -16,7 +16,7 @@ export default {
         ).bind(nombre).first();
 
         if (!userQuery) {
-          return Response.json({ success: false, message: "El usuario no existe." }, { status: 401 });
+          return Response.json({ success: false, message: "El usuario no existe ." }, { status: 401 });
         }
 
         if (userQuery.password !== password) {
