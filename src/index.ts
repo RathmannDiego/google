@@ -12,7 +12,7 @@ export default {
       const estadoDb = results ? "Activa y Conectada" : "Sin respuesta";
       
       return new Response(
-        `¡Hola desde Cloudflare con TypeScript     !\n\n` +
+        `¡Hola desde Cloudflare con TypeScript   vacio   !\n\n` +
         `RAMA: (Gestionada en servidor)\n` +
         `Repositorio: google\n` +
         `WORKER: ${env.ENVIRONMENT || 'desconocido'}\n` +
