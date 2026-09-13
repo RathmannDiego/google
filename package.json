@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
-    "deploy:dev": "node update-git-info.js dev && tsc && wrangler deploy --env dev",
-    "deploy:qa": "node update-git-info.js qa && tsc && wrangler deploy --env qa",
-    "deploy:prd": "node update-git-info.js prd && tsc && wrangler deploy --env prd"
+    "deploy:dev": "tsc && wrangler deploy --env dev",
+    "deploy:qa": "tsc && wrangler deploy --env qa",
+    "deploy:prd": "tsc && wrangler deploy --env prd"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260702.1",
@@ -13,5 +13,4 @@
     "wrangler": "^3.0.0"
   }
 }
-
 

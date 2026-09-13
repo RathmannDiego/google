@@ -1,5 +1,5 @@
 name = "google"
-main = "src/index.ts"
+main = "src/login.ts"
 compatibility_date = "2026-09-11"
 
 [env.dev]
