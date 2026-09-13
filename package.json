@@ -2,8 +2,12 @@
   "name": "google",
   "version": "1.0.0",
   "scripts": {
+    "prebuild": "node update-git-info.js",
     "build": "tsc",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "deploy:dev": "node update-git-info.js && tsc && wrangler deploy --env dev",
+    "deploy:qa": "node update-git-info.js && tsc && wrangler deploy --env qa",
+    "deploy:prd": "node update-git-info.js && tsc && wrangler deploy --env prd"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260702.1",
