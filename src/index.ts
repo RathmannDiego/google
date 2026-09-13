@@ -30,7 +30,7 @@ export default {
         <head><meta charset="UTF-8"><title>Consulta de Ambiente</title></head>
         <body style="font-family: Arial, sans-serif; padding: 40px; background: #f9f9f9;">
           <div style="max-width: 500px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2>Panel de Control Cloudflare Worker</h2>
+            <h2>Panel de Control Cloudflare Workerrrrrrrrrrrrrrr</h2>
             <p style="color: #666;">Repositorio: <strong>${repo}</strong> | Rama: <strong>${branch}</strong></p>
             <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
             
